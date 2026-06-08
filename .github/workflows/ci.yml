@@ -1,2 +1,8 @@
-
-
+name: Insurance CI Pipeline
+on:
+  push:
+    branches:
+      - main
+jobs:
+  call-build-workflow:
+    uses: cloudtechnet/16-Reusable-Workflows-Actions-Templates/.github/workflows/reusable-build.yml@main
